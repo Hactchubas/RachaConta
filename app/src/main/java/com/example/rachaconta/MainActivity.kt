@@ -136,7 +136,6 @@ class MainActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
 
     }
 
-
 }
 
 
