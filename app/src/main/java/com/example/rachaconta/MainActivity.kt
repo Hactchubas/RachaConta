@@ -103,11 +103,15 @@ class MainActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
     fun createResultMessage() : String{
         val billValue : TextView = findViewById(R.id.billValue)
         val nPeople : TextView = findViewById(R.id.nPeople)
-        val billValueText = billValue.text.toString()
-        val nPeopleText = nPeople.text.toString()
-        val resultFormatted = calcAndFormat(billValueText.toDouble(),nPeopleText.toDouble())
-        return "Olá galera, a conta deu $billValueText reais que dividindo para $nPeopleText pessoas fica $resultFormatted"
-
+        if(nPeople.text.isNotEmpty() && billValue.text.isNotEmpty()) {
+            val billValueText = billValue.text.toString()
+            val nPeopleText = nPeople.text.toString()
+            val resultFormatted = calcAndFormat(billValueText.toDouble(), nPeopleText.toDouble())
+            return "Olá galera, a conta deu $billValueText reais que dividindo para $nPeopleText pessoas fica $resultFormatted"
+        }
+        else{
+            return "Faltam campos serem preenchidos"
+        }
     }
 
     fun calcAndFormat(bill : Double, people : Double) : String{
