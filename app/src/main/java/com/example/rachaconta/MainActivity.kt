@@ -109,9 +109,8 @@ class MainActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
             val resultFormatted = calcAndFormat(billValueText.toDouble(), nPeopleText.toDouble())
             return "Olá galera, a conta deu $billValueText reais que dividindo para $nPeopleText pessoas fica $resultFormatted"
         }
-        else{
-            return "Faltam campos serem preenchidos"
-        }
+        return "Faltam campos serem preenchidos"
+
     }
 
     fun calcAndFormat(bill : Double, people : Double) : String{
@@ -135,9 +134,8 @@ class MainActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
     }
 
     fun clickSpeak(v: View){
-
+        Log.v("My Log", "$v pressed")
         tts.speak(createResultMessage(), TextToSpeech.QUEUE_FLUSH, null, null)
-
     }
 
 }
