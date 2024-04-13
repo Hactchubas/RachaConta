@@ -1,3 +1,4 @@
+# Racha Conta
 # Split Bill App
 
 ## Description
@@ -9,6 +10,10 @@ This project was developed as part of a study purpose to create an application t
 3. **Share Final Amount**: Allows sharing of the final calculated amount.
 4. **Text-to-Speech (TTS)**: The calculated amount is spoken using TTS.
 5. **Automatic Calculation**: The user does not need to click to calculate; it automatically calculates after filling in the fields for the bill amount and the number of people.
+
+
+https://github.com/Hactchubas/RachaConta/assets/116105882/645ec440-fb3d-4a48-b6b7-a004b14edddb
+
 
 ## Usage
 To use the app, simply enter the bill amount and the number of people, and the app will automatically calculate the amount each person needs to pay. Additionally, the final amount can be shared with friends.
