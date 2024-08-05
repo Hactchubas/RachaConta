@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RachaConta</string>
+    <string name="hint_billValue" translatable="false">Valor da conta</string>
+    <string name="hint_peopleNumber" translatable="false">Número de participantes</string>
 </resources>
