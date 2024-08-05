@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#141219"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <EditText
@@ -18,7 +18,7 @@
         android:hint="@string/hint_peopleNumber"
         android:inputType="number"
         android:paddingVertical="20sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/PrimaryTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/billValue" />
@@ -32,7 +32,7 @@
         android:hint="@string/hint_billValue"
         android:inputType="numberDecimal"
         android:paddingVertical="20sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/PrimaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/PrimaryTextColor"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,10 +64,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
+        android:layout_marginBottom="72dp"
         android:scaleType="fitXY"
+        android:scaleX="3"
+        android:scaleY="3"
+        app:layout_constraintBottom_toTopOf="@+id/billValue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
