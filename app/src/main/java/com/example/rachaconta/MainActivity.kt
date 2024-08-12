@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        Log.v("AQUI - K", "onCreate")
         resultSetup()
         shareButtonSetup()
 
@@ -109,14 +109,16 @@ class MainActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
             val resultFormatted = calcAndFormat(billValueText.toDouble(), nPeopleText.toDouble())
             return "Olá galera, a conta deu $billValueText reais que dividindo para $nPeopleText pessoas fica $resultFormatted"
         }
-        return "Faltam campos serem preenchidos"
+        return resources.getString(R.string.emptyFields_errorMessage)
 
     }
 
     fun calcAndFormat(bill : Double, people : Double) : String{
         val resultValue = bill/people
         val dFormat = DecimalFormat("##.##")
-        return "R$${dFormat.format(resultValue)} pra cada"
+        val coin : String = resources.getString(R.string.coinSymbol)
+        val forEach : String = resources.getString(R.string.forEach_message)
+        return "$coin${dFormat.format(resultValue)} $forEach"
     }
 
     override fun onDestroy() {

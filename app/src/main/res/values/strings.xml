@@ -2,4 +2,7 @@
     <string name="app_name">RachaConta</string>
     <string name="hint_billValue" translatable="false">Valor da conta</string>
     <string name="hint_peopleNumber" translatable="false">Número de participantes</string>
+    <string name="emptyFields_errorMessage" translatable="false">Faltam campos serem preenchidos</string>
+    <string name="coinSymbol" translatable="false">R$</string>
+    <string name="forEach_message" translatable="false">pra cada</string>
 </resources>

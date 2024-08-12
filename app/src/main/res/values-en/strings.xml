@@ -4,4 +4,8 @@
     <string name="hint_billValue" translatable="false">Bill price</string>
     <string name="hint_peopleNumber" translatable="false">Number of participants</string>
 
+    <string name="emptyFields_errorMessage" translatable="false">Empty fields remaining</string>
+    <string name="coinSymbol" translatable="false">US$</string>
+    <string name="forEach_message" translatable="false">for each</string>
+
 </resources>
